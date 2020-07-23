@@ -12,6 +12,7 @@ args=parser.parse_args()
 print(args.parg)                      #在terminal中可直接python 3.py df，而不用写参数名，相反带有'-','--'的参数必须要加上参数名
 print(args.number1)#调用时，只能写上全称，#在terminal中可以写全称或简写python 3.py df --number1 4 -n2 7
 print(args.number2)
+print(args)#显示所有参数Namespace(number1=5, number2=9, parg='sdf')
 
 
 '''

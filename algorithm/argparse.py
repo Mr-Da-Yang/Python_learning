@@ -1,6 +1,6 @@
 '''
 在terminal中输入python 文件名.py -h，查看
-在terminal中输入python 3.py df --number1 4 -n2 7 赋值
+在terminal中输入python 3.py df --number1 4 -n2 7 赋值#df是给默认参数‘parg’赋值的
 '''
 import argparse
 parser = argparse.ArgumentParser()

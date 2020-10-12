@@ -48,4 +48,7 @@ parser.add_argument("-n2",'--number2',help='第二个参数',type=int)
 #没有default的话，action='store_true'是False，action='store_false'是True
 #所以加上默认值来限制parser.add_argument('--usecpu', action='store_false',default='Ture', help="use cpu")这时的action='store_false'，不起作用
 
-#2.对于n2来讲，没有default的默，认值，所以print（args.number2）=None，需要自己填写
+#2.action='store_true'终端调用就为True
+#对于上面的--use-cpu， run py时就是上述1描述的情况，如果terminal的话，action='store_true'是False，变成了ture
+
+#3.对于n2来讲，没有default的默，认值，所以print（args.number2）=None，需要自己填写
